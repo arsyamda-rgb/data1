@@ -1,0 +1,22 @@
+# VeyrionCharacter configuration
+# Use /veyrioncharacter reload to apply changes. Database settings require a server restart.
+
+# Language file to use. Files live in plugins/VeyrionCharacter/lang/<language>.yml.
+# Missing keys fall back to the bundled English text.
+language: en
+
+database:
+  # SQLite file name inside the plugin folder (a plain file name, no directories).
+  file: characters.db
+  # How long (milliseconds) SQLite waits on a locked database before failing.
+  busy-timeout-ms: 5000
+
+# Logs extra diagnostic information to the console.
+debug: false
+
+# Values applied when a character record is first created for a player.
+# Existing characters are never modified by changing these.
+default-character:
+  adventure-exp: 0
+  adventure-rank: Novice
+  has-completed-gacha: false

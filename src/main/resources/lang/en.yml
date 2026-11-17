@@ -1,0 +1,25 @@
+# VeyrionCharacter - English messages (MiniMessage format)
+prefix: "<gray>[<gold>VeyrionCharacter</gold>]</gray> "
+
+command:
+  usage: "<yellow>Usage: /<label> info [player] | reload"
+  no-permission: "<red>You do not have permission to do that."
+  console-needs-player: "<red>Console must specify a player: /<label> info [player]"
+  player-not-found: "<red>No known player named <player>."
+  reload-success: "<green>Configuration and language files reloaded."
+  reload-database-note: "<yellow>Database settings changed; a server restart is required to apply them."
+  data-error: "<red>Could not read character data. Check the console for details."
+  no-character: "<red><player> has no character data yet."
+
+info:
+  header: "<gold>Character: <white><player>"
+  race: "<gray>Race: <white><value>"
+  exp: "<gray>Adventure EXP: <white><value>"
+  rank: "<gray>Adventure Rank: <white><value>"
+  gacha: "<gray>Gacha completed: <white><value>"
+  created: "<gray>Created: <white><value>"
+
+value:
+  none: "None"
+  yes: "Yes"
+  no: "No"

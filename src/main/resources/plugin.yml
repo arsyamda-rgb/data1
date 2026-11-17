@@ -1,0 +1,20 @@
+name: VeyrionCharacter
+version: '${project.version}'
+main: com.veyrion.character.core.VeyrionCharacterPlugin
+api-version: '1.21'
+description: Character data foundation for the Veyrion server.
+authors: [Veyrion]
+
+commands:
+  veyrioncharacter:
+    description: Inspect character data or reload the plugin configuration.
+    usage: "/<command> info [player] | reload"
+    aliases: [vcharacter, vchar]
+
+permissions:
+  veyrion.character.info:
+    description: View your own character data.
+    default: true
+  veyrion.character.admin:
+    description: Reload the plugin and view other players' character data.
+    default: op
